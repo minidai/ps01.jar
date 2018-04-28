@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sql>
+	<item id="demo.a" explain="测试用例">
+		select * from tsmenu where rownum=1
+	</item>
+	<item id="demo.b" explain="测试用例b">
+		select * from tsmenu where fid = #{fid}
+	</item>
+	<item id="demo.c" explain="测试用例c">
+		select 1 from dual
+	</item>
+	
+</sql>

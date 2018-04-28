@@ -1,0 +1,5 @@
+sqlloader: 
+  #xml所在目录
+  path: mybatis
+  #刷新一次间隔时间，单位毫秒
+  refreshTime: 3000
