@@ -9,6 +9,19 @@
   由于0.0.5以前的版本记不住了,从0.0.5版本开始说明
 ```
 
+### 0.0.7 ###
+```
+修改sqlloader.yml中的sql文件夹路径key由path修改为dirPath-- 直接读取path有可能会将系统的path读取出来
+添加功能:xml中配置的sql可以使用关键字${XX} 拼接SQL 
+    sql: select ${field} from ${table} ${where}
+	param:{
+			"${field}":"*",
+			"${table}":"dual",
+			"${where}":"where field=#{fieldVal}",
+			"fieldVal":"xxxx"
+		}
+```
+
 ### 0.0.6 ###
 修改所有配置文件由原先的.properties修改为.yml文件,后期框架的配置文件也将统一为.yml格式的文件
 
